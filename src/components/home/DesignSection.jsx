@@ -8,7 +8,7 @@ import {
     FaCouch,
     FaThLarge,
 } from "react-icons/fa";
-import Primary from "../buttons/primary";
+import Primary from "../buttons/Primary";
 
 const features = [
     { icon: <FaRegLightbulb />, label: "Planning" },
