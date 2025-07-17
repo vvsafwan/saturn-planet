@@ -1,6 +1,6 @@
 import React from 'react'
 import background from "../../assets/home/homebanner.jpg"; 
-import Primary from "../buttons/primary";
+import Primary from "../buttons/Primary";
 import Secondary from "../buttons/Secondary";
 
 export default function Banner() {
