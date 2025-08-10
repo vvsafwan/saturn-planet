@@ -30,7 +30,8 @@ export default function ProductDetail() {
         }
     };
 
-    const baseUrl = "http://localhost:5000"; 
+    // http://localhost:5000
+    const baseUrl = "https://saturnplanetfurniture.com"; 
     const breakpointColumnsObj = {
         default: 3,
         1100: 2,

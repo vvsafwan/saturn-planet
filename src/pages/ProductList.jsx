@@ -144,7 +144,7 @@ export default function ProductList() {
                 <div key={product._id} className="bg-white shadow">
                   <Link to={`/product/${product._id}`}>
                     <img
-                      src={`http://localhost:5000${product.images[0]}`}
+                      src={`https://saturnplanetfurniture.com${product.images[0]}`}
                       alt={product.category}
                       className="w-full h-90 object-cover hover:scale-105 transition duration-500 cursor-pointer rounded"
                     />

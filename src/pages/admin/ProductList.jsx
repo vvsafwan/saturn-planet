@@ -76,7 +76,7 @@ const ProductList = () => {
                         {product.images.map((img, idx) => (
                           <img
                             key={idx}
-                            src={`http://localhost:5000${img}`}
+                            src={`https://saturnplanetfurniture.com${img}`}
                             alt={`product-${index}-img-${idx}`}
                             className="w-16 h-16 object-cover rounded border"
                           />
