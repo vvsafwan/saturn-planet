@@ -12,3 +12,45 @@
   /* font-weight: 400; */
   font-style: normal;
 }
+
+.my-masonry-grid {
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex;
+  margin-left: -16px; 
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 16px; 
+  background-clip: padding-box;
+}
+
+.my-masonry-grid_column > img {
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+/* Add to your global styles or Tailwind CSS file */
+@layer components {
+  .input {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.3s ease-out forwards;
+}

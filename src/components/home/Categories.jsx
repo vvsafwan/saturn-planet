@@ -2,22 +2,33 @@ import React from 'react';
 import school from '../../assets/home/school.jpg';
 import office from '../../assets/home/office.jpg';
 import kitchen from '../../assets/home/kitchen.jpg';
+import lab from '../../assets/home/lab.jpg';
+import { Link } from 'react-router-dom';
 
 const categories = [
   {
-    name: 'School Laboratory Furniture',
+    name: 'Laboratory Furniture',
+    sku: 'LABORATORY SETUP',
+    image: lab,
+    link: '/products?category=laboratory'
+  },
+  {
+    name: 'School Furniture',
     sku: 'SCIENTIFIC SETUP',
-    image: school
+    image: school,
+    link: '/products?category=school'
   },
   {
     name: 'Office Furniture',
     sku: 'WORKPLACE COMFORT',
-    image: office
+    image: office,
+    link: '/products?category=office'
   },
   {
-    name: 'Kitchen Furniture',
+    name: 'Interior Design',
     sku: 'CULINARY SPACE',
-    image: kitchen
+    image: kitchen,
+    link: '/products?category=interior'
   },
 ];
 
@@ -25,32 +36,34 @@ export default function Categories() {
   return (
     <section className="pb-16 px-6 md:px-12 bg-white">
       <div className="max-w-7xl mx-auto">
-        <h3 className="text-[#918155] forum-font text-2xl md:text-3xl text-center mb-3">
+        <h3 className="text-[#0b9ba6] forum-font text-2xl md:text-3xl text-center mb-3">
           OUR COLLECTIONS
         </h3>
         <h1 className="forum-font text-3xl md:text-5xl text-center mb-15">
           Product Categories
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {categories.map((cat, index) => (
-            <div
-              key={index}
-              className="relative overflow-hidden shadow-lg group h-90 lg:h-[550px]"
-            >
-              <img
-                src={cat.image}
-                alt={cat.name}
-                className="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"
-              />
-              <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0)_0%,_rgba(0,0,0,0.6)_100%)]" />
-              <div className="absolute bottom-7">
-                <h2 className="text-white text-5xl md:text-4xl lg:text-4xl px-10 forum-font font-semibold">
-                  <span className='text-white text-xl font-medium'>{cat.sku}</span> <br />
-                  {cat.name}
-                </h2>
+            <Link to={cat.link}>
+              <div
+                key={index}
+                className="relative overflow-hidden shadow-lg group h-90 lg:h-[400px]"
+              >
+                <img
+                  src={cat.image}
+                  alt={cat.name}
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"
+                />
+                <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0)_0%,_rgba(0,0,0,0.6)_100%)]" />
+                <div className="absolute bottom-7">
+                  <h2 className="text-white text-5xl md:text-4xl lg:text-4xl px-10 forum-font font-semibold">
+                    <span className='text-white text-xl font-medium'>{cat.sku}</span> <br />
+                    {cat.name}
+                  </h2>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

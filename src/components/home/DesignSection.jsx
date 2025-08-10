@@ -41,7 +41,7 @@ export default function DesignSection() {
                         {features.map((item, index) => (
                             <div
                                 key={index}
-                                className="flex items-center space-x-2 text-sm text-[#77683f]"
+                                className="flex items-center space-x-2 text-sm text-[#025876]"
                             >
                                 <div className="text-xl bg-gray-200 p-3 rounded-full">{item.icon}</div>
                                 <span className="raleway-font">{item.label}</span>
