@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { getProductDetails } from '../services/api';
 import { Loader } from 'lucide-react';
 import Masonry from 'react-masonry-css';
-import EnquiryModal from '../components/EnquiryModal'; // adjust path
+import EnquiryModal from '../components/EnquiryModal';
 import { ToastContainer } from 'react-toastify';
 
 export default function ProductDetail() {
@@ -16,7 +16,7 @@ export default function ProductDetail() {
     useEffect(() => {
         fetchProductDetails();
         window.scrollTo(0, 0);
-    }, []);
+    }, []); 
 
     const fetchProductDetails = async () => {
         setLoading(true);
@@ -31,6 +31,7 @@ export default function ProductDetail() {
     };
 
     // http://localhost:5000
+    // const baseUrl = "http://localhost:5000"; 
     const baseUrl = "https://saturnplanetfurniture.com"; 
     const breakpointColumnsObj = {
         default: 3,

@@ -55,23 +55,23 @@ export default function Contact() {
                 <div className="bg-gray-50 rounded-lg p-10 flex-1 flex flex-col justify-between shadow">
                     <strong className="text-lg mb-2">📍 Address:</strong>
                     <p>
-                        #14 Headquarter Center Hi-Tech Park,<br />
-                        555 Panyu Avenue North
+                        Saturnplanet furniture llc.sp,<br />
+                        Al nabbah street, sharjah, uae
                     </p>
                 </div>
 
                 <div className="bg-gray-50 rounded-lg p-10 flex-1 flex flex-col justify-between shadow">
                     <strong className="text-lg mb-2">📞 Phone:</strong>
-                    <a href="tel:+8615899568868" className="text-blue-600 hover:underline">
-                        +86 158 9956 8868
-                    </a>
+                    {/* <a href="tel:+8615899568868" className="text-blue-600 hover:underline"> */}
+                        +971 56 779 6927
+                    {/* </a> */}
                 </div>
 
                 <div className="bg-gray-50 rounded-lg p-10 flex-1 flex flex-col justify-between shadow">
                     <strong className="text-lg mb-2">📧 Email:</strong>
-                    <a href="mailto:info@bokalabsystem.com" className="text-blue-600 hover:underline">
+                    {/* <a href="mailto:info@bokalabsystem.com" className="text-blue-600 hover:underline"> */}
                         info@bokalabsystem.com
-                    </a>
+                    {/* </a> */}
                 </div>
             </div>
 

@@ -9,6 +9,7 @@ import {
     FaThLarge,
 } from "react-icons/fa";
 import Primary from "../buttons/Primary";
+import { Link } from "react-router-dom";
 
 const features = [
     { icon: <FaRegLightbulb />, label: "Planning" },
@@ -50,7 +51,9 @@ export default function DesignSection() {
                     </div>
 
                     <div className="mt-10 md:mt-0">
-                        <Primary text={"LEARN MORE"} />
+                        <Link to="/about">
+                            <Primary text={"LEARN MORE"} />
+                        </Link>
                     </div>
                 </div>
             </div>
